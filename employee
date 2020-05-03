@@ -1,0 +1,33 @@
+
+#include<conio.h>
+struct employee
+{
+	char name[20];
+	int id;
+	float salary;
+};
+void main()
+{
+	int i;
+	struct employee e[i];
+	printf("enter information of employees\n");
+	for(i=0;i<=20;i++)
+	{
+		e[i].id=i+1;
+		printf("\n enter employee id %d\n",e[i].id);
+		tf("enter name:");
+		scanf("%s",e[i].name);
+		printf("enter salary:");
+		scanf("%f",&e[i].salary);
+		printf("\n");
+		
+	}
+	printf("displaying information of the employee\n");
+	for(i=0;i<=20;i++)
+	{
+		printf("information of id number %d:\n",i+1);
+		printf("name:");
+		puts(e[i].name);
+		printf("salary: %f",e[i].salary);
+	}
+}
